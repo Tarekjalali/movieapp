@@ -5,15 +5,16 @@ import Navbar from 'react-bootstrap/Navbar';
 
 
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const NavMovies = () => {
   return (
     <Navbar bg="dark" data-bs-theme="dark">
     <Container>
-      <Navbar.Brand href="#home">Home</Navbar.Brand>
+      <Link to='/'><Navbar.Brand href="#home">Home</Navbar.Brand></Link>
       <Nav className="me-auto">
-        <Nav.Link href="#home">Movies</Nav.Link>
-        <Nav.Link href="#features">Contact</Nav.Link>
+        <Link to='/listmovies'><Nav.Link href="#home">Movies</Nav.Link></Link>
+        
        
       </Nav>
     </Container>
